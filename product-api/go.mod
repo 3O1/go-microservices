@@ -1,4 +1,4 @@
-module github.com/3O1/go-microservices/product-api
+module projects/go-microservices/product-api
 
 go 1.19
 

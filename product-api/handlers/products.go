@@ -8,7 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/3O1/go-microservices/product-api/data"
+	"projects/go-microservices/product-api/data"
 )
 
 // KeyProduct is a key used for the Product object in the context

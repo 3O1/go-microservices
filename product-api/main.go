@@ -14,11 +14,11 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/3O1/go-microservices/product-api/data"
-	"github.com/3O1/go-microservices/product-api/handlers"
+	"projects/go-microservices/product-api/data"
+	"projects/go-microservices/product-api/handlers"
 )
 
-var bindAddress = env.String("BIND_ADDRESS", false, ":9090", "Bind address for the server")
+var bindAddress = env.String("BIND_ADDRESS", false, ":9000", "Bind address for the server")
 
 func main() {
 
