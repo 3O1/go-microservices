@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option go_package="/protos/currency";
+
+service Currency {
+    // GetRate returns the exchange rate for the two provided currency codes 
+    rpc GetRate(RateRequest) returns (RateResponse);
+}
+
+// RateRequest defines the request for a GetRate call
+message RateRequest {
+    // Base is the base currency code for the rate
+    string base = 1 [json_name = "base"];
+    // Destination is the destination currency code for the rate
+    string destination = 2 [json_name = "destination"];
+}
+
+// RateResponse is the response from a GetRate call, it contains
+// rate which is a floating point number and can be used to convert between the 
+// two currencies specified in the request.
+message RateResponse {
+    float rate = 1;
+}
